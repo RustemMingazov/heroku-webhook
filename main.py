@@ -1,13 +1,11 @@
-from crypt import methods
 import os
-from turtle import update
 import telebot
 from flask import Flask, request
 
 TOKEN = '5158579580:AAFIQ0I-1hOT_fbFI54VEXmTbQPOlWodiWI'
 APP_URL = f'https://heroku-webhook-rf.herokuapp.com/{TOKEN}'
 bot = telebot.TeleBot(TOKEN)
-server = False(__name__)
+server = Flask(__name__)
 
 @bot.message_handler(commands=['start'])
 def start(message):

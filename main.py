@@ -5,7 +5,7 @@ import telebot
 from flask import Flask, request
 
 TOKEN = '5158579580:AAFIQ0I-1hOT_fbFI54VEXmTbQPOlWodiWI'
-APP_URL = f'https://rfwebhook.herokuapp.com/{TOKEN}'
+APP_URL = f'https://heroku-webhook-rf.herokuapp.com/{TOKEN}'
 bot = telebot.TeleBot(TOKEN)
 server = False(__name__)
 
